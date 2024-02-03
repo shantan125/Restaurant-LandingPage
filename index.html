@@ -10,7 +10,7 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 
-<body>
+<div>
     <div class="content">
         <div class="nav-sec">
             <div class="logo">
@@ -35,7 +35,7 @@
                         culinary
                         delight. Savor the taste, experience the joy.</p>
                     <div class="orderbtn">
-                        <a href="#order">
+                        <a href="#menu">
                             <button>
                                 Order Now
                             </button>
@@ -116,10 +116,10 @@
         </div>
     </div>
     <!-- Food Menu Section -->
-    <div class="menuhead">
+    <div class="menuhead" id="menu">
         <h3>Menu</h3>
     </div>
-    <div class="menusec">
+    <div class="menusec" id="orderhere">
         <nav class="foodmenu">
             <a href="#" class="menu-link" onclick="showMenu('shawarmas')">Shawarma</a>
             <a href="#" class="menu-link" onclick="showMenu('desserts')">Dessert</a>
@@ -300,9 +300,59 @@
             <button>Order Now</button>
         </div>
     </div>
+    <!--review section-->
+    <div class="reviewhead">
+        <h3>Customer Reviews</h3>
+    </div>
+    <div class="reviewsec">
+        <div class="review">
+            <img src="images/review/review1.jpg" alt="Customer Review" class="reviewimg" height="170" width="250">
+            <h4>Sid</h4>
+            <p>"The chicken shawarma was absolutely delicious! The flavors were amazing, and the meat was so tender. I
+                also
+                loved the baklava - it was the perfect way to end the meal."</p>
+            <small>★★★★★</small>
+        </div>
+        <div class="review">
+            <img src="images/review/review2.jpg" alt="Customer Review" class="reviewimg" height="170" width="250">
+            <h4>Joe</h4>
+            <p>"I'm a huge fan of the paneer shawarma - it's a great vegetarian option. The mango lassi was also
+                fantastic, and
+                the staff was very friendly."</p>
+            <small>★★★★☆</small>
+        </div>
+        <div class="review">
+            <img src="images/review/review3.jpg" alt="Customer Review" class="reviewimg" height="170" width="250">
+            <h4>shreya</h4>
+            <p>"The Paneer and Chicken Shawarma are too good and the lassi here is amazing and must try item is American
+                ice Coffee"</p>
+            <small>★★★★★</small>
+        </div>
+    </div>
+    <!---footer section-->
+    <div class="footer">
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section brand">
+                    <h1 class="logo-text">TandoorTreats</h1>
+                    <p>Discover the Flavorful World of Shawarma & Desserts</p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact</h2>
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp; info@tandoortreats.com</span>
+                    </div>
+                </div>
+                <!-- Add more sections if needed, like address, etc. -->
+            </div>
+        </footer>
+    </div>
 
     <!-- JavaScript code -->
     <script src="script.js"></script>
-    </div>
+
+</div>
 </body>
+
 </html>
