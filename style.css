@@ -128,7 +128,7 @@ nav a:hover {
 }
 
 .aboutimg {
-  width: 35%;
+  width: 40%;
 }
 
 .aboutinfo h1 {
@@ -263,6 +263,11 @@ nav a:hover {
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
 }
+.menusec nav {
+  background-color: rgb(0, 0, 0, 0.4);
+  margin: 2opx;
+  padding: 10px;
+}
 
 .foodmenu {
   display: flex;
@@ -328,6 +333,7 @@ nav a:hover {
 .menu-item h2 {
   margin: 10px 0;
   color: #ffffff;
+  padding: 15px;
 }
 
 .menu-item p {
@@ -358,8 +364,83 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: white;
-  margin:0;
+  margin: 0;
 }
+/*review section*/
+.reviewsec {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Add gap between reviews */
+  padding: 20px; /* Add padding to the container */
+}
+
+.reviewhead {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+  padding: 25px;
+}
+
+.review {
+  background-color: rgb(0, 0, 0, 0.6);
+  align-items: center;
+  border: none;
+  border-radius: 1rem;
+  height: 400px;
+  width: 300px; /* Adjust width to control space between reviews */
+  text-align: center;
+  transition: 0.4s;
+  margin: 30px;
+}
+.review:hover {
+  background-color: rgba(116, 5, 5, 0.6);
+  transform: scale(1.1);
+}
+.review img {
+  opacity: 1;
+  object-fit: fill;
+  margin: 15px;
+  border-radius: 1rem;
+}
+.footer {
+  background-color: rgb(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-info {
+  margin-top: 10px;
+}
+
+.contact-info span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-info i {
+  margin-right: 5px;
+}
+
 /* General styling for responsiveness */
 @media only screen and (max-width: 768px) {
   .nav-sec {
@@ -437,5 +518,122 @@ nav a:hover {
 
   .menuhead h3 {
     font-size: 1.5em;
+  }
+}
+/* General styling for responsiveness */
+@media only screen and (max-width: 480px) {
+  .nav-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-sec nav {
+    margin-top: 15px;
+  }
+
+  .herosection {
+    height: 40vh;
+  }
+
+  .herosection h1 {
+    font-size: 1.2em;
+  }
+
+  .herosection p {
+    font-size: 0.8em;
+  }
+
+  .orderbtn button {
+    font-size: 0.7em;
+  }
+
+  .aboutsection,
+  .ourstory,
+  .uniqueness,
+  .promise {
+    flex-direction: column;
+  }
+
+  .aboutimg,
+  .storyimg,
+  .unqimg,
+  .promimg {
+    width: 100%;
+  }
+
+  .aboutinfo,
+  .storyinfo,
+  .unqinfo,
+  .prominfo {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .menu-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    flex: 0 0 80%;
+  }
+
+  .menu-item img {
+    max-height: 80px;
+  }
+
+  .menu-item h2 {
+    font-size: 1em;
+  }
+
+  .menu-item p,
+  .menu-item .price {
+    font-size: 0.7em;
+  }
+
+  .menu-item button {
+    font-size: 0.7em;
+  }
+
+  .menuhead h3 {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .review img {
+    max-width: 75%;
+    height: auto;
+    max-height:0%
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-section h1.logo-text {
+    font-size: 1.2rem;
+  }
+
+  .footer-section p {
+    font-size: 0.8rem;
+  }
+
+  .contact-info span {
+    font-size: 0.8rem;
+  }
+
+  .footer-section h2 {
+    font-size: 1rem;
+  }
+
+  .contact-info i {
+    font-size: 1rem;
   }
 }
