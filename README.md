@@ -1,2 +1,2 @@
 # Restaurant-LandingPage
-I have started creating a Restaurant Landing Page of a shawarma point
+I have crteated a Landing Page of a shawarma point.
